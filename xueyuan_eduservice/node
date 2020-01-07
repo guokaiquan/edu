@@ -1,0 +1,20 @@
+代码生成器
+一：导包-》
+    依赖版本：3.0.5    <dependency>
+                     <groupId>com.baomidou</groupId>
+                     <artifactId>mybatis-plus-boot-starter</artifactId>
+                 </dependency>
+    注意：新版本mybatisplus把代码生成器移除，需手动添加
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-generator</artifactId>
+            <version>3.3.0</version>
+        </dependency>
+
+       <!-- velocity 模板引擎, Mybatis Plus 代码生成器需要 依赖版本：2.0-->
+       该模板引擎为默认版本，无需在代码生成器中手动设置该引擎
+               <dependency>
+                   <groupId>org.apache.velocity</groupId>
+                   <artifactId>velocity-engine-core</artifactId>
+               </dependency>
+代码生成器配置：详见 CodeGenerator.java
